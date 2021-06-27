@@ -1,0 +1,316 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a090a;
+  background-image: url(img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+button,
+select,
+option,
+textarea {
+  outline: none;
+  font-size: 14px;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  @media (max-width: 1200px) {
+    width: 960px;
+  }
+  @media (max-width: 998px) {
+    width: 960px;
+  }
+  @media (max-width: 780px) {
+    width: 560px;
+  }
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+}
+
+.container {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+    margin-bottom: 30%;
+    .search {
+      display: flex;
+      align-items: center;
+      flex: 0.8;
+      .search-input {
+        flex: 1;
+        height: 40px;
+        background: rgba(196, 196, 196, 0.5);
+        border-radius: 5px;
+        padding: 15px 0 15px 15px;
+        color: #aeaeae;
+        border: none;
+      }
+      .search-button {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
+        margin-left: 18px;
+      }
+    }
+    .logo {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 28px;
+      color: white;
+    }
+
+    .user {
+      display: flex;
+
+      .user-ava {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+.container {
+  .main {
+    .title {
+      font-family: "Playfair Display", serif;
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 64px;
+      color: whitesmoke;
+      margin-bottom: 7px;
+    }
+    .title-en {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 23px;
+      display: inline-block;
+      margin-bottom: 38px;
+      color: #787878;
+    }
+    .info {
+      width: 100%;
+      margin-bottom: 100px;
+      display: flex;
+      justify-content: space-between;
+      .move-info {
+        width: 416.54px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .tag {
+          width: 72px;
+          height: 29px;
+          padding: 5px 10px;
+          background: #ffffff;
+          border-radius: 3px;
+          margin-bottom: 0;
+        }
+        .country {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+
+          color: #ffffff;
+        }
+        .play-img {
+          width: 30px;
+          height: 30px;
+        }
+        .play {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+
+          color: #ffffff;
+        }
+      }
+      .more-block {
+        width: 128px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .more {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          color: #ffffff;
+        }
+        .more-img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+.content {
+  background-color: #fff;
+  border-radius: 3px;
+  color: #000000;
+  padding: 3% 4%;
+  display: flex;
+  justify-content: space-between;
+  .short-info {
+    .poster {
+      display: block;
+      margin-top: -38%;
+      margin-bottom: 20px;
+    }
+    .button {
+      padding: 10px 44px;
+      background: #ff8f27;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      border: none;
+    }
+    .actors-title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 150%;
+      padding-left: 15px;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    .actors-list {
+      padding-left: 15px;
+      text-decoration: underline;
+      margin: 0;
+      .actors-list-item {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000000;
+      }
+    }
+  }
+  .full-info {
+    flex: 0.97;
+    .tabs {
+      margin-bottom: 40px;
+      .tabs-item {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        margin-right: 3%;
+        color: #000000;
+      }
+      .tabs-item:last-child {
+        margin-right: 0;
+      }
+      .tabs-item:hover {
+        color: #ff8f27;
+      }
+    }
+    .full-content {
+      display: flex;
+      justify-content: space-between;
+      .tabs-content {
+        margin-right: 70px;
+        .text {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 140%;
+          color: #000000;
+        }
+        .text-title {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 16px;
+          line-height: 140%;
+          color: #000000;
+          margin-top: 30px;
+          margin-bottom: 23px;
+        }
+      }
+    }
+  }
+}
+.subscribe {
+  .subscribe-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+  .subscribe-form {
+    display: flex;
+    margin-bottom: 48px;
+    .subscribe-input {
+      height: 40px;
+      background: rgba(196, 196, 196, 0.5);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      padding: 15px 0 15px 15px;
+      color: #aeaeae;
+      border: none;
+    }
+    .subsrcibe-button {
+      border: none;
+    }
+  }
+}
